@@ -16,6 +16,10 @@ class Users::FormFields < BaseComponent
       div class: "col-span-12 sm:col-span-6" do
         mount Shared::Field, operation.last_name, &.text_input(autocomplete: "family-name")
       end
+
+      div class: "col-span-12" do
+        mount Shared::Field, operation.profile_image, "Profile image", &.file_input(append_class: "p-2 bg-gray-100")
+      end
     end
   end
 end

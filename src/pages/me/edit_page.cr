@@ -47,7 +47,7 @@ class Me::EditPage < MainLayout
   end
 
   private def render_user_form
-    form_for Me::Update do
+    form_for Me::Update, multipart: true do
       div class: "space-y-6 px-4 sm:px-6 pb-6" do
         mount Users::FormFields, operation
 
