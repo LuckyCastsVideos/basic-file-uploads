@@ -1,4 +1,4 @@
-name: lucky_jumpstart
+name: file_uploads
 version: 0.1.0
 
 authors:
@@ -6,7 +6,7 @@ authors:
 
 targets:
   webserver:
-    main: src/lucky_jumpstart.cr
+    main: src/file_uploads.cr
 
 crystal: 1.0.0
 

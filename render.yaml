@@ -1,19 +1,19 @@
 databases:
-  - name: Lucky Jumpstart Primary
-    databaseName: lucky_jumpstart
-    user: lucky_jumpstart
+  - name: Basic File Uploads Primary
+    databaseName: file_uploads
+    user: file_uploads
     ipAllowList: []
 
 services:
   - type: web
-    name: Lucky Jumpstart
+    name: Basic File Uploads
     env: docker
     dockerfilePath: "./dockerfiles/webserver.Dockerfile"
     healthCheckPath: /
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: Lucky Jumpstart Primary
+          name: Basic File Uploads Primary
           property: connectionString
       - key: LUCKY_ENV
         value: production
