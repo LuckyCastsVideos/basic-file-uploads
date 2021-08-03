@@ -6,7 +6,7 @@ end
 # Using a storage option like Amazon Web Services S3? Your settings could look more complex, like this:
 #
 # Shrine.configure do |settings|
-#   if Lucky::Env.test?
+#   if LuckyEnv.test?
 #     settings.storages["cache"] = Shrine::Storage::FileSystem.new("uploads", prefix: "cache")
 #     settings.storages["store"] = Shrine::Storage::FileSystem.new("uploads")
 #   else
@@ -16,7 +16,7 @@ end
 #
 #     client = Awscr::S3::Client.new(region, key, secret)
 #
-#     bucket_name = "file-uploads-#{Lucky::Env.name}"
+#     bucket_name = "file-uploads-#{LuckyEnv.name}"
 #
 #     settings.storages["cache"] = Shrine::Storage::S3.new(bucket: bucket_name, client: client, prefix: "cache")
 #     settings.storages["store"] = Shrine::Storage::S3.new(bucket: bucket_name, client: client)

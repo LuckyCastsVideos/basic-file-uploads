@@ -12,7 +12,7 @@ class AppServer < Lucky::BaseAppServer
       Lucky::StaticCompressionHandler.new("./public", file_ext: "br", content_encoding: "br"),
       Lucky::StaticCompressionHandler.new("./public", file_ext: "gz", content_encoding: "gzip"),
       Lucky::StaticFileHandler.new("./public", fallthrough: false, directory_listing: false),
-      Lucky::Env.production? ? nil : Lucky::StaticFileHandler.new("./tmp", fallthrough: false, directory_listing: false),
+      LuckyEnv.production? ? nil : Lucky::StaticFileHandler.new("./tmp", fallthrough: false, directory_listing: false),
       Lucky::RouteNotFoundHandler.new,
     ].select(HTTP::Handler)
   end

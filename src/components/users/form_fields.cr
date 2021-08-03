@@ -18,7 +18,7 @@ class Users::FormFields < BaseComponent
       end
 
       div class: "col-span-12" do
-        mount Shared::Field, operation.profile_image, "Profile image", &.file_input(append_class: "p-2 bg-gray-100")
+        mount Shared::Field, operation.profile_image, "Profile image", &.file_input(accept: "image/*", append_class: "p-2 bg-gray-100")
       end
     end
   end
