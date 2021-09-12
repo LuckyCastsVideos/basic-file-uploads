@@ -1,0 +1,39 @@
+name: lucky_jumpstart
+version: 0.1.0
+
+authors:
+  - your-name-here <your-email-here>
+
+targets:
+  webserver:
+    main: src/lucky_jumpstart.cr
+
+crystal: 1.1.0
+
+dependencies:
+  lucky:
+    github: luckyframework/lucky
+    version: ~> 0.28.0
+  authentic:
+    github: luckyframework/authentic
+    version: ~> 0.8.0
+  carbon:
+    github: luckyframework/carbon
+    version: ~> 0.2.0
+  lucky_env:
+    github: luckyframework/lucky_env
+    version: ~> 0.1.3
+  jwt:
+    github: crystal-community/jwt
+    version: ~> 1.5.0
+
+development_dependencies:
+  spark:
+    github: stephendolan/spark
+    version: ~> 1.14
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 0.14.2
+  lucky_flow:
+    github: luckyframework/lucky_flow
+    version: ~> 0.7.3
