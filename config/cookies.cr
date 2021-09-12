@@ -1,6 +1,6 @@
 require "./server"
 
-Lucky::Session.configure(&.key=("_lucky_jumpstart_session"))
+Lucky::Session.configure(&.key=("_shrine_file_uploads_session"))
 
 Lucky::CookieJar.configure do |settings|
   settings.on_set = ->(cookie : HTTP::Cookie) {
