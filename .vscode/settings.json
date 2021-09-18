@@ -1,0 +1,15 @@
+{
+  // Make things a bit easier to see when screencasting
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 16,
+
+  // Make it easier to re-record segments with modified files
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
+  "workbench.editor.decorations.badges": false,
+
+  // Minimize visual noise.
+  "workbench.statusBar.visible": false,
+  "workbench.tips.enabled": false,
+  "workbench.activityBar.visible": false,
+}
